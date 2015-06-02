@@ -1,0 +1,118 @@
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,letterpaper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage[scale=0.875]{geometry} % Reduce document margins
+
+%----------------------------------------------------------------------------------------
+%   NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\name{Christopher}{Cope}
+
+% All information in this block is optional, comment out any lines you don't need
+\address{305 William Drive}{Hershey, PA 17033}
+\mobile{(717) 312-4474}
+\email{Christopher.Ryan.Cope@gmail.com}
+\social[github]{Shadow6363}
+\social[linkedin]{ChristopherRyanCope}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+
+%----------------------------------------------------------------------------------------
+%   WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\cventry{2013--Present}{Programmer Analyst}{Penn State Hershey College of Medicine}{Hershey, PA}{}{
+\begin{itemize}
+\item Developed multithreaded Python scripts for collecting the hospital's medical record information into a centralized repository where researchers can use standardized ontologies to discover potential cohorts for study.
+\item Developed an administration tool for the aforementioned scripts using Django.
+\begin{itemize}
+\item Includes an interface for updating the ontologies as well as doing stastical analysis on most frequently queried terms and historical patient counts for each of the terms.
+\end{itemize}
+\end{itemize}
+}
+
+%------------------------------------------------
+
+\cventry{2007--2013}{Technology Assistant}{Penn State Hershey Medical Center}{Hershey, PA}{}{
+\begin{itemize}
+\item In 2013, designed and developed Cerberus, a CakePHP authorization and authentication plug-in allowing easy integration with the CoSign secure single sign-on web authentication system and became the team's informal security analyst.
+\item In 2012, created \httplink[Clinical Studies Search]{clinicaltrials.hmc.psu.edu/cancer/}, a new CakePHP frontend for the Study Information Portal (SIP), replacing the vendor's outdated and insecure version.
+\item In 2010 through 2011, wrote Lab Manager and Lab Safety Manger for Research Computing.
+\begin{itemize}
+\item Lab Manager keeps track of who's doing what research in each of the labs in the Cancer Institute. It uses CakePHP and MySQL.
+\item Lab Safety Manager keeps track of any safety related information pertaining to each lab at Penn State Hershey. It uses CakePHP and Microsoft SQL Server.
+\end{itemize}
+\item In 2007 through 2009, developed the new Cancer Research and Administration Database (CRAD), as well as the new Comparative Medicine Database (CompMedDB).
+\begin{itemize}
+\item CRAD includes a web interface written in Java and JSP, with SQL tying it to an Oracle DB backend and various reports designed with BIRT to query the data.
+\item CompMedDB includes a web interface written in Java and JSP, with SQL tying it to a Microsoft SQL Server backend and various reports designed with BIRT to query the data.
+\item In 2009, CRAD was redesigned into RAD so that in addition to the Cancer Institute, the Heart and Vascular Institute, as well as the Neuroscience Institute could use it. This redesign involved switching to the CakePHP framework and Microsoft SQL Server database.
+\end{itemize}
+\end{itemize}
+}
+
+%------------------------------------------------
+
+\cventry{2005--2007}{Technology Assistant}{Penn State Hershey College of Medicine}{Hershey, PA}{}{
+\begin{itemize}
+\item Created a Microsoft Access database with a Microsoft Visual Basic frontend to keep track of participants in a Virtual Lung Navigation study lead by the Pulmonary department.
+\item Collaborated with various physicians to understand the mechanics behind the study and to test the program, using their feedback to enhance the end product.
+\end{itemize}
+}
+
+
+%----------------------------------------------------------------------------------------
+%   COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer Skills}
+
+\subsection{Languages}
+
+\cvitem{Proficient}{Python, PHP, Java, JavaScript, Node.js, SQL, HTML5, and CSS}
+\cvitem{Familiar}{Go, Ruby, Perl, Scheme, C, C++, \LaTeX, JSP, PL/SQL, CoffeeScript, and Visual Basic}
+
+\subsection{Software}
+
+\cvitem{Database}{Oracle, Microsoft SQL Server, MySQL, PostgreSQL, CouchDB, MongoDB, Redis, and SQLite}
+\cvitem{OS}{Red Hat Enterprise Linux, CentOS, Fedora, Ubuntu, Mac OS X, Microsoft Windows}
+
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2014}{Bachelor of Computer Science}{The Pennsylvania State University}{}{}{}
+
+%----------------------------------------------------------------------------------------
+
+
+%
+%\section{Interests}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+%
+%\section{References}
+%x\cvitem{}{Available upon request.}
+
+\end{document}
